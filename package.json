@@ -1,0 +1,16 @@
+{
+  "dependencies": {
+    "node-sass": "^9.0.0"
+  },
+  "name": "hotel-website",
+  "version": "1.0.0",
+  "main": "index.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "comple:sass":"node-sass style/main.scss style/style.css -w"
+  },
+  "author": "shahid",
+  "license": "ISC",
+  "description": ""
+}

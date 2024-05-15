@@ -1,0 +1,86 @@
+.hero{
+    max-width: 130rem;
+    margin:0 auto;
+    height: 90vh;
+    background-image:linear-gradient(to right bottom, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),url(../images/hero-img.jpeg);
+    color: $text-color;
+    position: relative;
+    background-size: cover;
+    
+    &_textBox{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        text-align: center;
+        line-height: 1.4;
+    }
+    &_heading{
+        letter-spacing: 2px;
+        margin-bottom: 1.2rem;
+        
+    }
+    &_text{
+        font-size: 1.6rem;
+        font-weight: 500;
+    }
+    &_sub-heading{
+        font-size: 2rem;
+        font-weight: 500;
+        margin-bottom: 3rem;
+    }
+}
+.header{}
+.logo{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+    justify-items: center;
+    // margin-bottom: 2rem;
+    margin-bottom: 2rem;
+    &_img{
+        width: 30%;
+        // margin-left: auto;'
+    }
+    &_contect{
+        justify-self: end;
+        margin-right: 3rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        &-no{
+            font-size: 1.8rem;
+        }
+        &-btn{
+            display: inline-block;
+            text-decoration: none;
+            font-size: 2rem;
+            text-align: center;
+            padding: .8rem 1.6rem;
+            border: 2px solid $text-color;
+            margin: .5rem auto;
+            color: $text-color;
+
+        }
+    }
+}
+.nav{
+    &_items{
+        list-style: none;
+        display: flex;
+        width: 50%;
+        margin: 0 auto;
+        // border: 2px solid black;
+        justify-content: space-between;
+        font-size: 1.8rem;
+        font-weight: 600;
+        align-items: center;
+        
+    }
+    &_link{
+        text-decoration: none;
+        color: $text-color;
+    }
+
+
+}

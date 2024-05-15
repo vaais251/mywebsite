@@ -1,0 +1,122 @@
+.rooms{
+    padding: 1rem 2rem;
+    padding-top: 5rem;
+    &_discription{
+        font-size: 1.6rem;
+        max-width: 80rem;
+        margin: 0 auto;
+        text-align: center;
+        line-height: 1.6;
+        margin-top: 1.6rem;
+        overflow: hidden;
+        
+    }
+    &_images{
+        max-width: 110rem;
+        margin: 2rem auto;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        column-gap: 4rem;
+        row-gap: 7rem;
+    }
+    &_image{
+        width: 100%;
+        border-radius: .5rem;
+        transition: all .3s;
+        &:hover{
+            transform: scale(1.1);
+            // width: 10%;
+        }
+    }
+    &_card{
+        // width: 3rem;
+        width: 100%;
+        // overflow-y: hidden;
+        border-radius: .5rem;
+        // border-top-left-radius: 1.2rem;
+        box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.075);
+        position: relative;
+        overflow: hidden;
+        &-price{
+            font-size: 1.6rem;
+            padding: 1rem;
+            width: 10rem;
+            // height:5rem;
+            color: gray;
+            background-color: yellow;
+            // border-radius: 30%;
+            position: absolute;
+            top: 1.2rem;
+            right: -3rem;
+            transform: rotate(45deg);
+            text-align: center;
+            z-index: 9;
+        }
+        
+    }
+    &_details{
+        // width: 40%;
+        padding: .8rem 1rem;
+        padding-bottom: 2rem;
+        
+        margin-top: 2rem;
+        list-style: none;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 3rem;
+        justify-content: center;
+        row-gap: 1rem;
+        position: relative;
+        &-no{
+            // position: absolute;
+            grid-column: 1/-1;
+            top: 0;
+            font-size: 1.8rem;
+            // color: red;
+            z-index: 1000;
+            text-align: center;
+            font-weight: 500;
+            margin-bottom: 2rem;
+        }
+    }
+    &_data{
+        font-size: 1.8rem;
+        display: flex;
+        gap: .8rem;
+        
+        &-text{
+            position: absolute;
+            bottom: -3rem;
+            left: 0rem;
+            // width: 100%;
+            font-family: inherit;
+            font-size: inherit;
+            line-height: 1.4;
+            padding: 0rem .8rem;
+            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        }
+    }
+    &_btn{
+        margin-top: 1.2rem;
+        text-decoration: none;
+        padding: .8rem 1.6rem;
+        &-book{
+            background-color: $color-primary;
+            // box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.25);
+            // box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.275);
+            border-radius: .8rem;
+            color: #fff;
+            transition: all .3s;
+            &:hover{
+                background-color: darken($color-primary, 5);
+                // box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.25);
+                transform: translateY(-.8rem);
+            }
+        }
+
+        &-read{
+            border: 1px solid gray;
+            position: relative;
+        }
+    }
+}

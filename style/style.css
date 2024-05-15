@@ -1,0 +1,185 @@
+.heading-primary {
+  font-size: 3.2rem; }
+
+.container {
+  max-width: 130rem;
+  margin: 0 auto; }
+
+.heading-secondary {
+  font-size: 2.8rem;
+  text-align: center;
+  margin-bottom: 3rem; }
+
+.heading-tridary {
+  font-size: 2.2rem;
+  text-align: center; }
+
+.hero {
+  max-width: 130rem;
+  margin: 0 auto;
+  height: 90vh;
+  background-image: linear-gradient(to right bottom, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(../images/hero-img.jpeg);
+  color: #fff;
+  position: relative;
+  background-size: cover; }
+  .hero_textBox {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    line-height: 1.4; }
+  .hero_heading {
+    letter-spacing: 2px;
+    margin-bottom: 1.2rem; }
+  .hero_text {
+    font-size: 1.6rem;
+    font-weight: 500; }
+  .hero_sub-heading {
+    font-size: 2rem;
+    font-weight: 500;
+    margin-bottom: 3rem; }
+
+.logo {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  align-items: center;
+  justify-items: center;
+  margin-bottom: 2rem; }
+  .logo_img {
+    width: 30%; }
+  .logo_contect {
+    justify-self: end;
+    margin-right: 3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+    .logo_contect-no {
+      font-size: 1.8rem; }
+    .logo_contect-btn {
+      display: inline-block;
+      text-decoration: none;
+      font-size: 2rem;
+      text-align: center;
+      padding: .8rem 1.6rem;
+      border: 2px solid #fff;
+      margin: .5rem auto;
+      color: #fff; }
+
+.nav_items {
+  list-style: none;
+  display: flex;
+  width: 50%;
+  margin: 0 auto;
+  justify-content: space-between;
+  font-size: 1.8rem;
+  font-weight: 600;
+  align-items: center; }
+
+.nav_link {
+  text-decoration: none;
+  color: #fff; }
+
+.rooms {
+  padding: 1rem 2rem;
+  padding-top: 5rem; }
+  .rooms_discription {
+    font-size: 1.6rem;
+    max-width: 80rem;
+    margin: 0 auto;
+    text-align: center;
+    line-height: 1.6;
+    margin-top: 1.6rem;
+    overflow: hidden; }
+  .rooms_images {
+    max-width: 110rem;
+    margin: 2rem auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 4rem;
+    row-gap: 7rem; }
+  .rooms_image {
+    width: 100%;
+    border-radius: .5rem;
+    transition: all .3s; }
+    .rooms_image:hover {
+      transform: scale(1.1); }
+  .rooms_card {
+    width: 100%;
+    border-radius: .5rem;
+    box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.075);
+    position: relative;
+    overflow: hidden; }
+    .rooms_card-price {
+      font-size: 1.6rem;
+      padding: 1rem;
+      width: 10rem;
+      color: gray;
+      background-color: yellow;
+      position: absolute;
+      top: 1.2rem;
+      right: -3rem;
+      transform: rotate(45deg);
+      text-align: center;
+      z-index: 9; }
+  .rooms_details {
+    padding: .8rem 1rem;
+    padding-bottom: 2rem;
+    margin-top: 2rem;
+    list-style: none;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 3rem;
+    justify-content: center;
+    row-gap: 1rem;
+    position: relative; }
+    .rooms_details-no {
+      grid-column: 1/-1;
+      top: 0;
+      font-size: 1.8rem;
+      z-index: 1000;
+      text-align: center;
+      font-weight: 500;
+      margin-bottom: 2rem; }
+  .rooms_data {
+    font-size: 1.8rem;
+    display: flex;
+    gap: .8rem; }
+    .rooms_data-text {
+      position: absolute;
+      bottom: -3rem;
+      left: 0rem;
+      font-family: inherit;
+      font-size: inherit;
+      line-height: 1.4;
+      padding: 0rem .8rem;
+      box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px; }
+  .rooms_btn {
+    margin-top: 1.2rem;
+    text-decoration: none;
+    padding: .8rem 1.6rem; }
+    .rooms_btn-book {
+      background-color: #f59f00;
+      border-radius: .8rem;
+      color: #fff;
+      transition: all .3s; }
+      .rooms_btn-book:hover {
+        background-color: #dc8e00;
+        transform: translateY(-0.8rem); }
+    .rooms_btn-read {
+      border: 1px solid gray;
+      position: relative; }
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+html {
+  font-size: 62.5%; }
+
+body {
+  font-family: "Rubik", sans-serif;
+  line-height: 1;
+  font-weight: 400;
+  color: #555; }
