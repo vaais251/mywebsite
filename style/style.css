@@ -170,6 +170,53 @@
       border: 1px solid gray;
       position: relative; }
 
+.dinning {
+  overflow-y: hidden;
+  max-width: 130rem;
+  margin: 0 auto; }
+  .dinning_grid {
+    padding-top: 8rem;
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(auto-fit, 25rem);
+    justify-content: center;
+    align-content: center;
+    justify-items: center;
+    gap: 4rem; }
+  .dinning_meals {
+    position: relative;
+    max-width: 25rem; }
+    .dinning_meals-image {
+      height: 40rem;
+      width: 100%;
+      object-fit: cover; }
+    .dinning_meals-disc {
+      position: absolute;
+      bottom: 2rem;
+      background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4));
+      padding: .8rem 1.6rem;
+      color: #fff; }
+    .dinning_meals-name {
+      display: block;
+      font-size: 1.6rem;
+      margin-bottom: 1rem;
+      color: #fff;
+      font-weight: 600; }
+    .dinning_meals-detail {
+      font-size: 1.2rem;
+      font-weight: 400;
+      color: #fff;
+      line-height: 1.6; }
+    .dinning_meals-price {
+      display: inline-block;
+      margin-top: 1.5rem;
+      background-color: #f59f00;
+      padding: .8rem 1.2rem;
+      text-decoration: none;
+      color: inherit;
+      font-size: 1.4rem;
+      border-radius: .5rem; }
+
 * {
   margin: 0;
   padding: 0;

@@ -1,0 +1,65 @@
+.dinning{
+    overflow-y: hidden;
+    // border: 2px solid black; 
+    max-width: 130rem;
+    margin: 0 auto;
+    &_grid{
+        // border: 2px solid black; 
+        
+        padding-top: 8rem;
+        display: grid;
+        width: 100%;
+        grid-template-columns: repeat(auto-fit,25rem);
+        justify-content: center;
+        align-content: center;
+        // align-items: end;
+        justify-items:center;
+        gap: 4rem;
+        // margin: 0 10rem;
+        // border: 2px solid green;
+    }
+    &_meals{
+        position: relative;
+        max-width: 25rem;
+        &-image{
+            height: 40rem;
+            width: 100%;
+            object-fit: cover;
+        }
+        &-disc{
+
+            position: absolute;
+            bottom: 2rem;
+            background-image: linear-gradient(rgba(0, 0, 0, 0.4),rgba(0, 0, 0, 0.4));
+            padding: .8rem 1.6rem;
+            color: #fff;
+        }
+        &-name{
+            display: block;
+            font-size: 1.6rem;
+            // text-align: center;
+            margin-bottom: 1rem;
+            color: #fff;
+            font-weight: 600;
+
+        }
+        &-detail{
+            font-size: 1.2rem;
+            // text-align: center;
+            font-weight: 400;
+            color: #fff;
+            line-height: 1.6;
+
+        }
+        &-price{
+            display: inline-block;
+            margin-top: 1.5rem;
+            background-color: $color-primary;
+            padding: .8rem 1.2rem;
+            text-decoration: none;
+            color: inherit;
+            font-size: 1.4rem;
+            border-radius: .5rem;
+        }
+    }
+}
