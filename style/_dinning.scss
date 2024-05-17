@@ -1,8 +1,7 @@
 .dinning{
     overflow-y: hidden;
     // border: 2px solid black; 
-    max-width: 130rem;
-    margin: 0 auto;
+
     &_grid{
         // border: 2px solid black; 
         
@@ -10,6 +9,7 @@
         display: grid;
         width: 100%;
         grid-template-columns: repeat(auto-fit,25rem);
+        justify-items: center;
         justify-content: center;
         align-content: center;
         // align-items: end;

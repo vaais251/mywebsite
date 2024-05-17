@@ -1,6 +1,5 @@
 .hero{
-    max-width: 130rem;
-    margin:0 auto;
+    
     height: 90vh;
     background-image:linear-gradient(to right bottom, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),url(../images/hero-img.jpeg);
     color: $text-color;
@@ -30,7 +29,7 @@
         margin-bottom: 3rem;
     }
 }
-.header{}
+// .header{}
 .logo{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -39,8 +38,13 @@
     // margin-bottom: 2rem;
     margin-bottom: 2rem;
     &_img{
-        width: 30%;
+        width: 8rem;
         // margin-left: auto;'
+    }
+    &_icon{
+        font-size: 5rem;
+        justify-self: start;
+        padding-left: 2rem;
     }
     &_contect{
         justify-self: end;
@@ -49,12 +53,12 @@
         flex-direction: column;
         align-items: center;
         &-no{
-            font-size: 1.8rem;
+            font-size: 30%;
         }
         &-btn{
             display: inline-block;
             text-decoration: none;
-            font-size: 2rem;
+            font-size: 30%;
             text-align: center;
             padding: .8rem 1.6rem;
             border: 2px solid $text-color;
@@ -64,11 +68,31 @@
         }
     }
 }
+.header{
+    position: relative;
+}
 .nav{
+    @media (max-width:62.5em){
+        position: absolute;
+        left: 0;
+        top: 7rem;
+        
+        background-color: #fff;
+        width: 50%;
+        height: 100vh;
+        padding: 4rem;
+        transition: all .4s;
+        transform: translateX(-100%);
+    }
     &_items{
+        @media (max-width:62.5em){
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 3rem;
+        }
         list-style: none;
         display: flex;
-        width: 50%;
+        width: 70%;
         margin: 0 auto;
         // border: 2px solid black;
         justify-content: space-between;
@@ -80,6 +104,9 @@
     &_link{
         text-decoration: none;
         color: $text-color;
+        @media (max-width:62.5em){
+           color: $color-primary;;
+        }
     }
 
 
