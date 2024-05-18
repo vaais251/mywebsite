@@ -250,7 +250,7 @@
   margin-top: 5rem; }
 
 .gallery {
-  background-color: rgba(128, 128, 128, 0.34);
+  background-color: rgba(128, 128, 128, 0.128);
   grid-column: full-start / full-end;
   display: grid;
   /*grid-template-columns: repeat(8, 1fr);
@@ -306,6 +306,42 @@
     height: 100%;
     object-fit: cover;
     display: block; }
+
+.contact a {
+  text-decoration: none;
+  color: #f59f00; }
+
+.contact div {
+  text-decoration: none;
+  color: #f59f00; }
+  .contact div span {
+    display: flex;
+    align-items: center;
+    gap: 1rem; }
+  .contact div ul {
+    list-style: none;
+    font-size: 1.4rem;
+    margin-left: 3rem; }
+
+.contact span {
+  display: inline-block; }
+
+.contact_details {
+  list-style: none;
+  display: grid;
+  justify-content: center;
+  row-gap: 2rem;
+  padding: 1rem 4rem;
+  flex-wrap: wrap; }
+
+.contact_detail {
+  padding: 1rem;
+  border: 2px solid #f59f00;
+  font-size: 1.6rem;
+  line-height: 1.6; }
+  .contact_detail a {
+    display: flex;
+    gap: 1rem; }
 
 * {
   margin: 0;
