@@ -19,7 +19,19 @@
   background-image: linear-gradient(to right bottom, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(../images/hotel.jpeg);
   color: #fff;
   position: relative;
-  background-size: cover; }
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat; }
+  .hero_imageBox {
+    top: 0;
+    left: 0;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: wheat; }
+  .hero_image {
+    width: 100%;
+    height: 100%; }
   .hero_textBox {
     position: absolute;
     top: 50%;
