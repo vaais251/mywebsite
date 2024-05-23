@@ -16,7 +16,7 @@
 
 .hero {
   height: 90vh;
-  background-image: linear-gradient(to right bottom, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(../images/hero-img.jpeg);
+  background-image: linear-gradient(to right bottom, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(../images/hotel.jpeg);
   color: #fff;
   position: relative;
   background-size: cover; }
@@ -344,7 +344,8 @@
     gap: 1rem; }
 
 .testimonials {
-  margin: 8rem auto; }
+  margin: 8rem auto;
+  overflow: hidden; }
   .testimonials_grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
@@ -373,6 +374,33 @@
       font-size: 1.6rem;
       font-weight: 500;
       margin: 1rem 0; }
+
+.footer {
+  background-color: lightgray;
+  padding-top: 3rem; }
+  .footer_logos {
+    display: flex;
+    align-items: center;
+    justify-content: center; }
+  .footer_logo {
+    width: 8rem; }
+  .footer_heading {
+    text-align: center;
+    margin-top: 1rem;
+    font-size: 1.2rem;
+    color: #f59f00; }
+  .footer_heading3 {
+    text-align: center;
+    margin-top: 2rem;
+    font-size: 1.8rem;
+    margin-bottom: 2rem; }
+
+.map {
+  width: 60vw;
+  display: flex;
+  align-items: center;
+  height: 60vh;
+  margin: 0 auto; }
 
 * {
   margin: 0;

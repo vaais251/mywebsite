@@ -1,0 +1,34 @@
+.footer{
+   background-color: lightgray;
+   padding-top: 3rem;
+    &_logos{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    &_logo{
+        width: 8rem;
+ }
+ &_heading{
+    text-align: center;
+    margin-top: 1rem;
+    font-size: 1.2rem;
+    color: $color-primary;
+ }
+ &_heading3{
+    text-align: center;
+    margin-top: 2rem;
+    font-size: 1.8rem;
+    
+    margin-bottom: 2rem;
+ }
+}
+
+.map{
+    width: 60vw;
+    display: flex;
+    align-items: center;
+    height: 60vh;
+    margin: 0 auto;
+   
+}
