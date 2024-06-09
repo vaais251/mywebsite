@@ -6,6 +6,7 @@
 @import './contact';
 @import './testimonial';
 @import './footer';
+@import './overlay';
 *{
     margin: 0;
     padding: 0;
@@ -27,6 +28,7 @@ body {
     color: #555;
     overflow-x: hidden;
     max-width: 100vw;
+    position: relative;
     // display: flex;
     // align-items: center;
     // flex-direction: column;
